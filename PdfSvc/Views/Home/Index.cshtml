@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+        <h2>PdfSvc</h2>
+    <div>
+        <p>(C) 2014 Ted Spence</p>
+        <p>GPL v3 - <a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a></p>
+        <p>Version @ViewBag.version (running on @ViewBag.machine)</p>
+    </div>
+
+    <h2>Convert PDF to PNG</h2>
+    <div>
+        @using (Html.BeginForm("Render", "RenderPdf", FormMethod.Post, new { enctype = "multipart/form-data" })) {
+            <p>PDF file: <input type="file" name="pdf" /></p>
+            <p><input type="submit" /></p>
+        }
+    </div>
+
+    <h2>Convert PNG to PDF</h2>
+    <div>
+        @using (Html.BeginForm("Print", "PrintPng", FormMethod.Post, new { enctype = "multipart/form-data" })) {
+            <p>PNG file: <input type="file" name="png" /></p>
+            <p><input type="submit" /></p>
+        }
+    </div>
+</body>
+</html>
