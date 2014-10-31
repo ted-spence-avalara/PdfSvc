@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("PdfSvc")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyCompany("Anand Khedkar - Ted Spence")]
 [assembly: AssemblyProduct("PdfSvc")]
-[assembly: AssemblyCopyright("Copyright (C) Avalara 2014")]
+[assembly: AssemblyCopyright("Copyright (C) Anand Khedkar - Ted Spence 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
