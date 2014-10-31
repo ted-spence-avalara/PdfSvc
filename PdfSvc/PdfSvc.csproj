@@ -38,8 +38,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Magick.NET-AnyCPU">
-      <HintPath>..\packages\Magick.NET-Q16-AnyCPU.7.0.0.0006\lib\net40-client\Magick.NET-AnyCPU.dll</HintPath>
+    <Reference Include="Magick.NET-x64">
+      <HintPath>..\vendor\Magick.NET\Magick.NET-x64.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
