@@ -42,6 +42,9 @@
       <HintPath>..\packages\Magick.NET-Q16-AnyCPU.7.0.0.0006\lib\net40-client\Magick.NET-AnyCPU.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -120,6 +123,7 @@
     <Content Include="packages.config" />
     <Content Include="Content\pdf_convert\gsdll32.lib" />
     <Content Include="Views\Home\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\pdfsvc.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
