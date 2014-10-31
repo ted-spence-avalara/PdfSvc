@@ -2,7 +2,6 @@ packages/
 PdfSvc/bin/
 *.suo
 PdfSvc/obj/
-.csproj.user
 *.user
 PdfSvc.Tests/obj/
 PdfSvc.Tests/bin/
