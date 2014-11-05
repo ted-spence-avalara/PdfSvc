@@ -1,0 +1,33 @@
+﻿@model PdfSvc.Models.Files
+
+@{
+    ViewBag.Title = "Render";
+}
+@if (Model == null)
+{
+    <h3>Image not present</h3>
+}
+else
+{
+    @:<table align="center">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td align="center">
+                            <div>
+                                @foreach (var item in Model.FilesBytes)
+                                {
+                                    <img src="data:image;base64,@System.Convert.ToBase64String(item)" width="1300" />
+                                }
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        @:</table>
+}
+
+
+

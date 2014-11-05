@@ -116,6 +116,7 @@
     </Compile>
     <Compile Include="Helpers\FileConverter.cs" />
     <Compile Include="Helpers\IFileConverter.cs" />
+    <Compile Include="Models\Files.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +125,9 @@
     <Content Include="Content\pdf_convert\gsdll32.lib" />
     <Content Include="Views\Home\Index.cshtml" />
     <None Include="Properties\PublishProfiles\pdfsvc.pubxml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\RenderPdf\Render.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -134,7 +138,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

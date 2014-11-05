@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using PdfSvc.Helpers;
+using PdfSvc.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -41,10 +42,8 @@ namespace PdfSvc.Controllers
 
             // Convert
             FileConverter fc = new FileConverter();
-            var jr = new JsonResult();
-            jr.MaxJsonLength = Int32.MaxValue;
-            jr.Data = fc.PdfToPng(pdf_bytes);
-            return jr;
+            var result = new Files { FilesBytes = fc.PdfToPng(pdf_bytes) };
+            return View(result); 
         }
     }
 }
